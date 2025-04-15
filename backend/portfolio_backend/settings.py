@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+1v%jw7&#0fsed2qk=ueph!7^9lo-k-*go06q9^934qd-l@8x='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['3.148.25.10']
+ALLOWED_HOSTS = ['3.148.25.10', 'localhost']
 
 
 # Application definition
@@ -137,7 +137,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Vite's default port
     "http://127.0.0.1:5173",
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'http://3.148.25.10',
+    'https://3.148.25.10'
+]
 # Add CORS_ALLOW_CREDENTIALS
 CORS_ALLOW_CREDENTIALS = True
 
