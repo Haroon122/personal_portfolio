@@ -139,6 +139,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://3.148.25.10",
     "https://3.148.25.10",
+    "https://personal-portfolio-km36-grayf885s.vercel.app/"
 ]
 CSRF_TRUSTED_ORIGINS = [
     'http://3.148.25.10',
